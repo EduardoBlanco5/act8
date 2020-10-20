@@ -2,6 +2,7 @@
 #define COMPUTADORA_H
 
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 class Computadora{
@@ -24,10 +25,12 @@ public:
 
     friend ostream& operator<<(ostream &out, const Computadora &C)
     {
-        out << C.NombreEquipo << endl;
-        out << C.SistemaOp << endl;
-        out << C.DiscoD << endl;
-        out << C.MemoriaR << endl;
+        out << left ;
+        out << setw(15)<< C.NombreEquipo;
+        out << setw(15)<< C.SistemaOp;
+        out << setw(9)<< C.DiscoD; 
+        out << setw(9)<< C.MemoriaR; 
+        out << endl;
 
         return out;
     }

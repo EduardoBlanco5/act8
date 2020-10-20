@@ -17,6 +17,12 @@ void Laboratorio::agregarFinal(const Computadora &C)
 
 void Laboratorio::mostrar()
 {
+    cout << left;
+    cout<< setw(15)<< "NombreEquipo";
+    cout << setw(15)<< "SistemaOp";
+    cout << setw(9)<< "DiscoD"; 
+    cout << setw(9)<< "MemoriaR"; 
+    cout << endl;
     for (size_t i = 0; i < cont; i++)
     {
         Computadora &C = arreglo[i];
