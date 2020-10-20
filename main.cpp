@@ -17,16 +17,13 @@ int main (){
     lb.agregarFinal(C01);
     lb.agregarFinal(C02);
 
-    lb.mostrar();
-
     //cout << C01;
 
-   /* cout << C02.getNombre() << endl;
-    cout << C02.getSistema() << endl;
-    cout << C02.getDisco() << endl;
-    cout << C02.getRam() << endl; 
+    Computadora C03;
+    cin >> C03;
+    lb.agregarFinal(C03);
 
-    cout << C01.getNombre() << endl;*/
+    lb.mostrar();
 
     system("pause");
     return 0;

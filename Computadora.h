@@ -35,6 +35,27 @@ public:
         return out;
     }
 
+    friend istream& operator>>(istream &in, Computadora &C)
+    {
+        string temp;
+        float DiscoD;
+        int MemoriaR;
+
+        cout << "Nombre: ";
+        getline(cin, C.NombreEquipo);
+
+        cout << "Sistema Operativo: ";
+        getline(cin, C.SistemaOp);
+
+        cout << "Disco Duro: ";
+        cin >> C.DiscoD;
+
+        cout << "Memoria Ram: ";
+        cin >> C.MemoriaR;
+        
+        return in;
+    }
+
 };
 
 
