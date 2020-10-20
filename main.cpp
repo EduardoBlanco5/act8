@@ -14,14 +14,15 @@ int main (){
     C02.setRam(8);
 
     Laboratorio lb;
-    lb.agregarFinal(C01);
-    lb.agregarFinal(C02);
+    //lb.agregarFinal(C01);
+    //lb.agregarFinal(C02);
+    lb << C01 << C02;
 
     //cout << C01;
 
     Computadora C03;
     cin >> C03;
-    lb.agregarFinal(C03);
+    lb << C03;
 
     lb.mostrar();
 
