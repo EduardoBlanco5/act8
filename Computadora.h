@@ -22,6 +22,16 @@ public:
     void setRam(int v);
     int getRam();
 
+    friend ostream& operator<<(ostream &out, const Computadora &C)
+    {
+        out << C.NombreEquipo << endl;
+        out << C.SistemaOp << endl;
+        out << C.DiscoD << endl;
+        out << C.MemoriaR << endl;
+
+        return out;
+    }
+
 };
 
 

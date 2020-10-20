@@ -17,7 +17,9 @@ int main (){
     lb.agregarFinal(C01);
     lb.agregarFinal(C02);
 
-    lb.mostrar();
+    //lb.mostrar();
+
+    cout << C01;
 
    /* cout << C02.getNombre() << endl;
     cout << C02.getSistema() << endl;

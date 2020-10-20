@@ -20,7 +20,7 @@ void Laboratorio::mostrar()
     for (size_t i = 0; i < cont; i++)
     {
         Computadora &C = arreglo[i];
-        cout << "Nombre del Equipo: " << C.getNombre() << endl;
+       cout << "Nombre del Equipo: " << C.getNombre() << endl;
         cout << "Sistema Operativo: " << C.getSistema() << endl;
         cout << "Memoria en Disco Duro: " << C.getDisco() << endl;
         cout << "Memoria Ram: " << C.getRam() << endl;
