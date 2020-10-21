@@ -25,6 +25,7 @@ int main (){
     lb << C03;
 
     lb.mostrar();
+    lb.respaldar_tabla();
 
     system("pause");
     return 0;

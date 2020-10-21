@@ -10,6 +10,7 @@ public:
     Laboratorio();
     void agregarFinal(const Computadora &C);
     void mostrar();
+    void respaldar_tabla();
 
     friend Laboratorio& operator<<(Laboratorio &lb, const Computadora &C)
     {
