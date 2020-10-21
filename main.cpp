@@ -26,6 +26,7 @@ int main (){
 
     lb.mostrar();
     lb.respaldar_tabla();
+    lb.respaldar(); //Linea por linea
 
     system("pause");
     return 0;

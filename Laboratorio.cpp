@@ -40,7 +40,7 @@ void Laboratorio::mostrar()
 void Laboratorio::respaldar_tabla()
 {
     
-    ofstream archivo("Computadoras.txt");
+    ofstream archivo("Computadoras_tabla.txt");
     if(archivo.is_open()){
         archivo << left;
         archivo << setw(15)<< "NombreEquipo";
@@ -52,6 +52,24 @@ void Laboratorio::respaldar_tabla()
         {
             Computadora &C = arreglo[i];
             archivo << C;
+        }
+    }
+    archivo.close();
+    
+}
+
+void Laboratorio::respaldar()
+{
+    
+    ofstream archivo("Computadoras.txt");
+    if(archivo.is_open()){
+        for (size_t i = 0; i < cont; i++)
+        {
+            Computadora &C = arreglo[i];
+            archivo << C.getNombre() << endl;
+            archivo << C.getSistema() << endl;
+            archivo << C.getDisco() << endl;
+            archivo << C.getRam() << endl;
         }
     }
     archivo.close();
