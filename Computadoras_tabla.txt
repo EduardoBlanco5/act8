@@ -1,0 +1,4 @@
+NombreEquipo   SistemaOp      DiscoD   MemoriaR 
+HP             Windows        580      8        
+MAC            IOS            500      8        
+ASUS           Windows        324      16       

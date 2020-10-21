@@ -75,3 +75,40 @@ void Laboratorio::respaldar()
     archivo.close();
     
 }
+
+void Laboratorio::recuperar()
+{
+    ifstream archivo("Computadoras.txt");
+    if (archivo.is_open())
+    {
+        string temp;
+        float DiscoD;
+        int MemoriaR;
+        Computadora C;
+
+        while (true)
+        {
+            getline(archivo, temp);
+            if(archivo.eof())
+            {
+                break;
+            }
+            C.setNombre(temp);
+
+            getline(archivo, temp);
+            C.setSistema(temp);
+
+            getline(archivo, temp);
+            DiscoD = stof(temp); //string-to-float
+            C.setDisco(DiscoD);
+
+            getline(archivo, temp);
+            MemoriaR = stoi(temp); //string-to-int
+            C.setRam(MemoriaR);
+
+            agregarFinal(C);
+        }
+        
+    }
+     
+}
